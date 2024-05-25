@@ -1,0 +1,198 @@
+INFO     Using path main.py                                                     
+INFO     Resolved absolute path /home/archive/server/patg/api/main.py           
+INFO     Searching for package file structure from directories with __init__.py 
+         files                                                                  
+INFO     Importing from /home/archive/server/patg/api                           
+                                                                                
+ ╭─ Python module file ─╮                                                       
+ │                      │                                                       
+ │  🐍 main.py          │                                                       
+ │                      │                                                       
+ ╰──────────────────────╯                                                       
+                                                                                
+INFO     Importing module main                                                  
+INFO     Found importable FastAPI app                                           
+                                                                                
+ ╭─ Importable FastAPI app ─╮                                                   
+ │                          │                                                   
+ │  from main import app    │                                                   
+ │                          │                                                   
+ ╰──────────────────────────╯                                                   
+                                                                                
+INFO     Using import string main:app                                           
+                                                                                
+ ╭─────────── FastAPI CLI - Production mode ───────────╮                        
+ │                                                     │                        
+ │  Serving at: http://0.0.0.0:8000                    │                        
+ │                                                     │                        
+ │  API docs: http://0.0.0.0:8000/docs                 │                        
+ │                                                     │                        
+ │  Running in production mode, for development use:   │                        
+ │                                                     │                        
+ │  fastapi dev                                        │                        
+ │                                                     │                        
+ ╰─────────────────────────────────────────────────────╯                        
+                                                                                
+INFO:     Started server process [1299218]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     192.168.1.45:43304 - "GET /docs HTTP/1.1" 200 OK
+INFO:     192.168.1.45:43304 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     192.168.1.45:39128 - "GET /docs HTTP/1.1" 200 OK
+INFO:     192.168.1.45:39128 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     192.168.1.45:39128 - "GET /docs HTTP/1.1" 200 OK
+INFO:     192.168.1.45:39128 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     192.168.1.45:39128 - "GET /docs HTTP/1.1" 200 OK
+INFO:     192.168.1.45:39128 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     192.168.1.45:39128 - "GET /docs HTTP/1.1" 200 OK
+INFO:     192.168.1.45:39128 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     database connected
+INFO:     got from ID
+INFO:     got to ID
+INFO:     [38688, 62148]
+INFO:     routing
+INFO:     routing complete
+INFO:     192.168.1.45:59638 - "GET /route?dirfrom=fuencarral&dirto=joaquin%20vilumbrales&csalida=true&cllegada=false HTTP/1.1" 200 OK
+INFO:     database connected
+INFO:     got from ID
+INFO:     got to ID
+INFO:     [38688, 62148]
+INFO:     routing
+INFO:     routing complete
+INFO:     192.168.1.45:47224 - "GET /route?dirfrom=fuencarral&dirto=joaquin%20vilumbrales&csalida=true&cllegada=false HTTP/1.1" 200 OK
+INFO:     192.168.191.78:57252 - "GET /docs HTTP/1.1" 200 OK
+INFO:     192.168.191.78:57252 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     database connected
+INFO:     got from ID
+INFO:     got to ID
+INFO:     [1012, 4031]
+INFO:     routing
+INFO:     routing complete
+INFO:     192.168.191.78:65229 - "GET /route?dirfrom=preciados&dirto=atocha&csalida=true&cllegada=false HTTP/1.1" 200 OK
+INFO:     database connected
+INFO:     got from ID
+INFO:     got to ID
+INFO:     [327585, 4031]
+INFO:     routing
+INFO:     routing complete
+INFO:     192.168.191.78:65254 - "GET /route?dirfrom=preciados&dirto=atocha&csalida=true&cllegada=false HTTP/1.1" 200 OK
+INFO:     192.168.1.45:60256 - "GET /route/?dirfrom=calle%20parque%20bujaruelo&dirto=calle%20atocha&csalida=true&cllegada=true HTTP/1.1" 307 Temporary Redirect
+INFO:     database connected
+INFO:     got from ID
+INFO:     got to ID
+INFO:     [321168, 36327]
+INFO:     routing
+INFO:     routing complete
+INFO:     192.168.1.45:46452 - "GET /route/?dirfrom=calle%20parque%20bujaruelo&dirto=calle%20atocha&csalida=true&cllegada=true HTTP/1.1" 307 Temporary Redirect
+INFO:     database connected
+INFO:     got from ID
+INFO:     got to ID
+INFO:     [70701, 36327]
+INFO:     routing
+INFO:     routing complete
+INFO:     192.168.1.45:46452 - "GET /route?dirfrom=calle%20parque%20bujaruelo&dirto=calle%20atocha&csalida=true&cllegada=true HTTP/1.1" 200 OK
+INFO:     database connected
+INFO:     got from ID
+INFO:     got to ID
+INFO:     [327585, 4031]
+INFO:     routing
+INFO:     routing complete
+INFO:     192.168.191.78:49244 - "GET /route?dirfrom=preciados&dirto=atocha&csalida=true&cllegada=false HTTP/1.1" 200 OK
+INFO:     database connected
+INFO:     got from ID
+INFO:     got to ID
+INFO:     [327585, 4031]
+INFO:     routing
+INFO:     routing complete
+INFO:     192.168.191.78:49266 - "GET /route?dirfrom=preciados&dirto=atocha&csalida=true&cllegada=false HTTP/1.1" 200 OK
+INFO:     database connected
+INFO:     got from ID
+INFO:     got to ID
+INFO:     [327585, 4031]
+INFO:     routing
+INFO:     routing complete
+INFO:     192.168.191.78:49310 - "GET /route?dirfrom=preciados&dirto=atocha&csalida=true&cllegada=false HTTP/1.1" 200 OK
+INFO:     database connected
+INFO:     got from ID
+INFO:     got to ID
+INFO:     [327585, 4031]
+INFO:     routing
+INFO:     routing complete
+INFO:     192.168.191.78:49313 - "GET /route?dirfrom=preciados&dirto=atocha&csalida=true&cllegada=false HTTP/1.1" 200 OK
+INFO:     database connected
+INFO:     got from ID
+INFO:     got to ID
+INFO:     [327585, 4031]
+INFO:     routing
+INFO:     routing complete
+INFO:     192.168.191.78:49399 - "GET /route?dirfrom=preciados&dirto=atocha&csalida=true&cllegada=false HTTP/1.1" 200 OK
+INFO:     database connected
+INFO:     got from ID
+INFO:     got to ID
+INFO:     [327585, 4031]
+INFO:     routing
+INFO:     routing complete
+INFO:     192.168.191.78:49404 - "GET /route?dirfrom=preciados&dirto=atocha&csalida=true&cllegada=false HTTP/1.1" 200 OK
+INFO:     192.168.191.78:49602 - "GET /route?dirfrom=preciados&dirto=atocha&csalida=true&cllegada=false.json HTTP/1.1" 422 Unprocessable Entity
+INFO:     192.168.191.78:49602 - "GET /route?dirfrom=preciados&dirto=atocha&csalida=true&cllegada=false.json HTTP/1.1" 422 Unprocessable Entity
+INFO:     192.168.191.78:49611 - "GET /docs HTTP/1.1" 200 OK
+INFO:     192.168.191.78:49611 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     192.168.191.78:49673 - "GET /route?dirfrom=preciados&dirto=atocha&csalida=true&cllegada=false.json HTTP/1.1" 422 Unprocessable Entity
+INFO:     192.168.191.78:49673 - "GET /route?dirfrom=preciados&dirto=atocha&csalida=true&cllegada=false.json HTTP/1.1" 422 Unprocessable Entity
+INFO:     192.168.191.78:64307 - "GET /docs HTTP/1.1" 200 OK
+INFO:     192.168.191.78:64307 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     database connected
+INFO:     got from ID
+INFO:     got to ID
+INFO:     [1012, 87478]
+INFO:     routing
+INFO:     routing complete
+INFO:     192.168.191.78:64382 - "GET /route?dirfrom=preciados&dirto=chamartin&csalida=true&cllegada=false HTTP/1.1" 200 OK
+INFO:     192.168.191.78:64429 - "GET /route?dirfrom=preciados&dirto=chamartin&csalida=true&cllegada=false.json HTTP/1.1" 422 Unprocessable Entity
+INFO:     192.168.191.78:64429 - "GET /route?dirfrom=preciados&dirto=chamartin&csalida=true&cllegada=false.json HTTP/1.1" 422 Unprocessable Entity
+INFO:     database connected
+INFO:     got from ID
+INFO:     got to ID
+INFO:     [1012, 87478]
+INFO:     routing
+INFO:     routing complete
+INFO:     192.168.191.78:64461 - "GET /route?dirfrom=preciados&dirto=chamartin&csalida=true&cllegada=false HTTP/1.1" 200 OK
+INFO:     database connected
+INFO:     got from ID
+INFO:     got to ID
+INFO:     [1012, 87478]
+INFO:     routing
+INFO:     routing complete
+INFO:     192.168.191.78:64465 - "GET /route?dirfrom=preciados&dirto=chamartin&csalida=true&cllegada=false HTTP/1.1" 200 OK
+INFO:     database connected
+INFO:     got from ID
+INFO:     got to ID
+INFO:     [1012, 87478]
+INFO:     routing
+INFO:     routing complete
+INFO:     192.168.191.78:64517 - "GET /route?dirfrom=preciados&dirto=chamartin&csalida=true&cllegada=false HTTP/1.1" 200 OK
+INFO:     database connected
+INFO:     got from ID
+INFO:     got to ID
+INFO:     [1012, 87478]
+INFO:     routing
+INFO:     database connected
+INFO:     got from ID
+INFO:     got to ID
+INFO:     [1012, 87478]
+INFO:     routing
+INFO:     routing complete
+INFO:     routing complete
+INFO:     192.168.191.78:64522 - "GET /route?dirfrom=preciados&dirto=chamartin&csalida=true&cllegada=false HTTP/1.1" 200 OK
+INFO:     database connected
+INFO:     got from ID
+INFO:     got to ID
+INFO:     [1012, 87478]
+INFO:     routing
+INFO:     routing complete
+INFO:     192.168.191.78:64528 - "GET /route?dirfrom=preciados&dirto=chamartin&csalida=true&cllegada=false HTTP/1.1" 200 OK
+INFO:     192.168.191.78:64539 - "GET /route?dirfrom=preciados&dirto=chamartin&csalida=true&cllegada=false.json HTTP/1.1" 422 Unprocessable Entity
+INFO:     192.168.191.78:64539 - "GET /route?dirfrom=preciados&dirto=chamartin&csalida=true&cllegada=false.json HTTP/1.1" 422 Unprocessable Entity
+INFO:     192.168.191.78:64539 - "GET /route?dirfrom=preciados&dirto=chamartin&csalida=true&cllegada=false.json HTTP/1.1" 422 Unprocessable Entity
+INFO:     192.168.191.78:64539 - "GET /route?dirfrom=preciados&dirto=chamartin&csalida=true&cllegada=false.json HTTP/1.1" 422 Unprocessable Entity
