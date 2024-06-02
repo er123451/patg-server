@@ -6,10 +6,51 @@ import psycopg2 as pg
 from config import credentials as cred
 import logging 
 import sys
+from fastapi.middleware.cors import CORSMiddleware
 
 logger = logging.getLogger("uvicorn.error")
 c = cred.credentials()
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+@app.get("/chargers")
+def launch_query_chargers(dir: str):
+    try:
+        osm = getNominatim(dir)
+        if osm is None: raise ValueError("dir value not valid")
+
+        conn = pg.connect(dbname=c.database , user=c.usuario, password=c.contraseña , host=c.servidor , port=c.puerto)
+        logger.info("database connected")
+        cursor = conn.cursor()
+        cursor.execute("""select json_build_object(
+                            'type', 'FeatureCollection',
+                            'features', json_agg(ST_AsGeoJSON(a.*)::json)
+                        )
+                        from (select 
+                                    id, 
+                                    ST_Transform(geom,4326),
+                                    ST_Transform(geom,4326) <-> ST_PointFromText('POINT(%s %s)',4326) as dist
+                                from 
+                                    precarga
+                                order by 
+                                    dist
+                                limit 5 
+                                ) as a
+                        """,[osm.longitude,osm.latitude])
+        return cursor.fetchone()[0]
+
+
+
+    except ValueError as e:
+        raise HTTPException(status_code=404, detail=str(e))
+
+
 
 
 @app.get("/route")
@@ -36,6 +77,8 @@ def launch_query_raw(dirfrom: str,dirto:str):
         return {"osmtoraw":osmto.raw, "osmfromraw":osmfrom.raw}
     except ValueError as e:
         raise HTTPException(status_code=404, detail=str(e))
+    
+
 
 def getRoute(osmfrom,osmto):
     conn = pg.connect(dbname=c.database , user=c.usuario, password=c.contraseña , host=c.servidor , port=c.puerto)
