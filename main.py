@@ -149,6 +149,6 @@ def getRoute(osmfrom,osmto):
 
 def getNominatim(street):
     osmid = 0
-    geolocator = Nominatim(user_agent="autoelectric_webapi_0.1")
+    geolocator = Nominatim(user_agent="autoelectric_webapi_0.1", timeout = 1000)
     location = geolocator.geocode(query=street, bounded= True, viewbox= [Point(40.9488,-4.4797),Point(39.8175,-2.7850)])
     return location
